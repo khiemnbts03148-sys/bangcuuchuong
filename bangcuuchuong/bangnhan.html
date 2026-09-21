@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Cửu Chương Từ 2 Đến 9</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #fef3c7 100%);
+            min-height: 100vh;
+        }
+
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .item-row {
+            transition: all 0.2s ease;
+        }
+
+        .item-row:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            transform: scale(1.03);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-10 text-gray-800">
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-8 sm:mb-12">
+            <div class="inline-flex items-center justify-center p-3 bg-white shadow-md rounded-2xl mb-4 text-amber-500">
+                <i class="fa-solid fa-calculator text-3xl sm:text-4xl"></i>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-amber-500 tracking-tight">
+                Bảng Cửu Chương
+            </h1>
+            <p class="mt-2 sm:mt-3 text-base sm:text-lg text-gray-600 font-medium">
+                Học toán vui vẻ và dễ dàng từ bảng 2 đến bảng 9 ✨
+            </p>
+        </header>
+
+        <!-- Responsive Grid for Multiplication Cards (2 to 9) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+            <!-- Bảng 2 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-blue-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-blue-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-500 bg-blue-50 px-2.5 py-1 rounded-full">Bảng 2</span>
+                        <div class="w-8 h-8 rounded-full bg-blue-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">2</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 1</span> <span class="text-blue-600 font-semibold">= 2</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 2</span> <span class="text-blue-600 font-semibold">= 4</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 3</span> <span class="text-blue-600 font-semibold">= 6</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 4</span> <span class="text-blue-600 font-semibold">= 8</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 5</span> <span class="text-blue-600 font-semibold">= 10</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 6</span> <span class="text-blue-600 font-semibold">= 12</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 7</span> <span class="text-blue-600 font-semibold">= 14</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 8</span> <span class="text-blue-600 font-semibold">= 16</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 9</span> <span class="text-blue-600 font-semibold">= 18</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>2 × 10</span> <span class="text-blue-600 font-semibold">= 20</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 3 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-emerald-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-emerald-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-500 bg-emerald-50 px-2.5 py-1 rounded-full">Bảng 3</span>
+                        <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">3</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 1</span> <span class="text-emerald-600 font-semibold">= 3</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 2</span> <span class="text-emerald-600 font-semibold">= 6</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 3</span> <span class="text-emerald-600 font-semibold">= 9</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 4</span> <span class="text-emerald-600 font-semibold">= 12</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 5</span> <span class="text-emerald-600 font-semibold">= 15</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 6</span> <span class="text-emerald-600 font-semibold">= 18</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 7</span> <span class="text-emerald-600 font-semibold">= 21</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 8</span> <span class="text-emerald-600 font-semibold">= 24</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 9</span> <span class="text-emerald-600 font-semibold">= 27</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>3 × 10</span> <span class="text-emerald-600 font-semibold">= 30</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 4 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-purple-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-400 to-purple-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-purple-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-purple-500 bg-purple-50 px-2.5 py-1 rounded-full">Bảng 4</span>
+                        <div class="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">4</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 1</span> <span class="text-purple-600 font-semibold">= 4</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 2</span> <span class="text-purple-600 font-semibold">= 8</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 3</span> <span class="text-purple-600 font-semibold">= 12</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 4</span> <span class="text-purple-600 font-semibold">= 16</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 5</span> <span class="text-purple-600 font-semibold">= 20</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 6</span> <span class="text-purple-600 font-semibold">= 24</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 7</span> <span class="text-purple-600 font-semibold">= 28</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 8</span> <span class="text-purple-600 font-semibold">= 32</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 9</span> <span class="text-purple-600 font-semibold">= 36</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>4 × 10</span> <span class="text-purple-600 font-semibold">= 40</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 5 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-amber-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-400 to-amber-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-amber-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full">Bảng 5</span>
+                        <div class="w-8 h-8 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">5</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 1</span> <span class="text-amber-600 font-semibold">= 5</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 2</span> <span class="text-amber-600 font-semibold">= 10</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 3</span> <span class="text-amber-600 font-semibold">= 15</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 4</span> <span class="text-amber-600 font-semibold">= 20</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 5</span> <span class="text-amber-600 font-semibold">= 25</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 6</span> <span class="text-amber-600 font-semibold">= 30</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 7</span> <span class="text-amber-600 font-semibold">= 35</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 8</span> <span class="text-amber-600 font-semibold">= 40</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 9</span> <span class="text-amber-600 font-semibold">= 45</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>5 × 10</span> <span class="text-amber-600 font-semibold">= 50</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 6 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-rose-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-rose-400 to-rose-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-rose-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-rose-500 bg-rose-50 px-2.5 py-1 rounded-full">Bảng 6</span>
+                        <div class="w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">6</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 1</span> <span class="text-rose-600 font-semibold">= 6</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 2</span> <span class="text-rose-600 font-semibold">= 12</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 3</span> <span class="text-rose-600 font-semibold">= 18</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 4</span> <span class="text-rose-600 font-semibold">= 24</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 5</span> <span class="text-rose-600 font-semibold">= 30</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 6</span> <span class="text-rose-600 font-semibold">= 36</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 7</span> <span class="text-rose-600 font-semibold">= 42</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 8</span> <span class="text-rose-600 font-semibold">= 48</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 9</span> <span class="text-rose-600 font-semibold">= 54</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>6 × 10</span> <span class="text-rose-600 font-semibold">= 60</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 7 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-cyan-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-cyan-400 to-cyan-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-cyan-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-600 bg-cyan-50 px-2.5 py-1 rounded-full">Bảng 7</span>
+                        <div class="w-8 h-8 rounded-full bg-cyan-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">7</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 1</span> <span class="text-cyan-600 font-semibold">= 7</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 2</span> <span class="text-cyan-600 font-semibold">= 14</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 3</span> <span class="text-cyan-600 font-semibold">= 21</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 4</span> <span class="text-cyan-600 font-semibold">= 28</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 5</span> <span class="text-cyan-600 font-semibold">= 35</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 6</span> <span class="text-cyan-600 font-semibold">= 42</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 7</span> <span class="text-cyan-600 font-semibold">= 49</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 8</span> <span class="text-cyan-600 font-semibold">= 56</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 9</span> <span class="text-cyan-600 font-semibold">= 63</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>7 × 10</span> <span class="text-cyan-600 font-semibold">= 70</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 8 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-indigo-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-indigo-400 to-indigo-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-indigo-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-500 bg-indigo-50 px-2.5 py-1 rounded-full">Bảng 8</span>
+                        <div class="w-8 h-8 rounded-full bg-indigo-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">8</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 1</span> <span class="text-indigo-600 font-semibold">= 8</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 2</span> <span class="text-indigo-600 font-semibold">= 16</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 3</span> <span class="text-indigo-600 font-semibold">= 24</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 4</span> <span class="text-indigo-600 font-semibold">= 32</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 5</span> <span class="text-indigo-600 font-semibold">= 40</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 6</span> <span class="text-indigo-600 font-semibold">= 48</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 7</span> <span class="text-indigo-600 font-semibold">= 56</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 8</span> <span class="text-indigo-600 font-semibold">= 64</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 9</span> <span class="text-indigo-600 font-semibold">= 72</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>8 × 10</span> <span class="text-indigo-600 font-semibold">= 80</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bảng 9 -->
+            <div class="card-hover bg-white/80 backdrop-blur-md rounded-2xl p-5 border border-orange-100 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-400 to-orange-600"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4 pb-2 border-b border-orange-100">
+                        <span class="text-xs font-bold uppercase tracking-wider text-orange-500 bg-orange-50 px-2.5 py-1 rounded-full">Bảng 9</span>
+                        <div class="w-8 h-8 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">9</div>
+                    </div>
+                    <div class="space-y-1.5 text-gray-700">
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 1</span> <span class="text-orange-600 font-semibold">= 9</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 2</span> <span class="text-orange-600 font-semibold">= 18</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 3</span> <span class="text-orange-600 font-semibold">= 27</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 4</span> <span class="text-orange-600 font-semibold">= 36</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 5</span> <span class="text-orange-600 font-semibold">= 45</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 6</span> <span class="text-orange-600 font-semibold">= 54</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 7</span> <span class="text-orange-600 font-semibold">= 63</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 8</span> <span class="text-orange-600 font-semibold">= 72</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 9</span> <span class="text-orange-600 font-semibold">= 81</span></div>
+                        <div class="item-row p-1.5 rounded-lg flex justify-between"><span>9 × 10</span> <span class="text-orange-600 font-semibold">= 90</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-12 text-gray-500 text-sm font-medium">
+            <p>Thiết kế bảng cửu chương học tập hiện đại • Tối ưu cho Mobile & Desktop</p>
+        </footer>
+    </div>
+</body>
+</html>

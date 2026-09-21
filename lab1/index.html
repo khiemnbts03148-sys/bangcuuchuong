@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cổng Thông Tin Cá Nhân</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="phone">
+
+        <!-- TIÊU ĐỀ -->
+        <div class="header">
+            <h1>Cổng Thông Tin Cá Nhân</h1>
+        </div>
+
+
+        <!-- KHU VỰC NỘI DUNG -->
+        <div class="content">
+
+            <!-- NỘI DUNG SẼ ĐƯỢC JS HIỂN THỊ Ở ĐÂY -->
+            <div id="showme">
+                
+            </div>
+
+        </div>
+
+
+        <!-- MENU -->
+       <div class="menu">
+
+    <div class="menu-item" onclick="showme('about')">
+        👤
+        <div>Tôi là ai</div>
+    </div>
+
+    <div class="menu-item" onclick="showme('nganh')">
+        🎓
+        <div>Chuyên ngành</div>
+    </div>
+
+    <div class="menu-item" onclick="showme('tiendo')">
+        📋
+        <div>Tiến độ đào tạo</div>
+    </div>
+
+</div>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
