@@ -75,7 +75,7 @@ function showAccount() {
   $('productsSection').classList.add('hidden'); $('content').classList.remove('hidden');
   $('content').innerHTML = `<h2>Tài khoản</h2><p>Xin chào <b>${esc(user.name)}</b> (${esc(user.email)})</p><p class="muted">Vai trò: ${user.role === 'admin' ? 'Quản trị viên' : 'Khách hàng'}</p><div class="form-actions"><button class="btn" onclick="showOrders()">Đơn hàng của tôi</button>${user.role === 'admin' ? '<button class="btn secondary" onclick="showAdmin()">Trang quản trị</button>' : ''}<button class="btn danger" onclick="logout()">Đăng xuất</button></div>`;
 }
-async function logout() { await api('/api/logout', { method: 'POST' }); user = null; await loadMe(); showHome(); }
+async function logout() { await api('/api/logout', { method: 'POST' }); user = null; cart = []; saveCart(); await loadMe(); showHome(); }
 function showCart() {
   $('productsSection').classList.add('hidden'); $('content').classList.remove('hidden');
   if (!cart.length) { $('content').innerHTML = '<h2>Giỏ hàng</h2><p>Giỏ hàng đang trống.</p><button class="btn" onclick="showHome()">Tiếp tục mua sắm</button>'; return; }
