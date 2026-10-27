@@ -1,0 +1,14 @@
+{
+  "name": "divineshop-sqlserver-demo",
+  "version": "1.1.0",
+  "description": "Website ban san pham ky thuat so demo de thuc hanh kiem thu, dung SQL Server",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mssql": "^11.0.1"
+  }
+}

@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --bg: #f5f6fa;
+    --ink: #171923;
+    --muted: #6c7180;
+    --purple: #6544d8;
+    --line: #e7e8ef
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Be Vietnam Pro', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column
+}
+
+main {
+    flex: 1
+}
+
+.topbar {
+    background: #191625;
+    color: #ddd;
+    text-align: center;
+    font-size: 11px;
+    padding: 8px
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 17px max(calc((100% - 1180px)/2), 22px);
+    background: #fff;
+    flex-wrap: wrap
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #222;
+    white-space: nowrap
+}
+
+.logo span {
+    color: var(--purple)
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    min-width: 220px;
+    background: #f3f3f7;
+    border-radius: 10px;
+    padding: 4px
+}
+
+.search input {
+    border: 0;
+    background: transparent;
+    padding: 10px;
+    outline: 0;
+    width: 100%;
+    font: inherit
+}
+
+.search button {
+    border: 0;
+    background: var(--purple);
+    color: white;
+    border-radius: 8px;
+    padding: 0 17px;
+    font-size: 20px;
+    cursor: pointer
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+nav a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #454653;
+    font-weight: 600
+}
+
+nav b {
+    background: #ede8ff;
+    color: var(--purple);
+    border-radius: 20px;
+    padding: 2px 7px
+}
+
+.hero {
+    max-width: 1180px;
+    margin: 24px auto 18px;
+    background: linear-gradient(110deg, #1c1830, #3a286e);
+    border-radius: 20px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    color: #fff;
+    padding: 40px 50px;
+    align-items: center
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #8a70f4;
+    font-weight: 800;
+    margin: 0 0 10px
+}
+
+.hero h1 {
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.15;
+    margin: 8px 0 15px
+}
+
+.hero h1 span {
+    color: #b5a4ff
+}
+
+.hero p:not(.eyebrow) {
+    color: #d4d0e2;
+    line-height: 1.8;
+    max-width: 430px;
+    font-size: 14px
+}
+
+.hero-art {
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero-art img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+    opacity: .88
+}
+
+.primary {
+    background: #7959f0;
+    color: #fff;
+    border: 0;
+    border-radius: 9px;
+    padding: 13px 19px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px
+}
+
+.benefits {
+    max-width: 1180px;
+    margin: 0 auto 34px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px
+}
+
+.benefits div {
+    background: #fff;
+    padding: 17px;
+    border-radius: 12px;
+    font-size: 18px
+}
+
+.benefits b {
+    font-size: 13px;
+    margin-left: 6px
+}
+
+.benefits small {
+    display: block;
+    color: var(--muted);
+    font-size: 11px;
+    margin: 7px 0 0 31px
+}
+
+#productsSection {
+    max-width: 1180px;
+    margin: 0 auto 60px
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+    gap: 20px
+}
+
+.section-head h2 {
+    font-size: 27px;
+    margin: 0
+}
+
+.filters {
+    display: flex;
+    gap: 8px
+}
+
+.filters select,
+select,
+input,
+textarea {
+    font: inherit
+}
+
+.filters select {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+    color: #444
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ececf2;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: .2s
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px #19162512
+}
+
+.product-card img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    background: #ececf3
+}
+
+.product-info {
+    padding: 15px
+}
+
+.tag {
+    display: inline-block;
+    background: #f0ecff;
+    color: #6847d6;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700
+}
+
+.product-info h3 {
+    font-size: 14px;
+    min-height: 40px;
+    margin: 12px 0 6px
+}
+
+.desc {
+    font-size: 11px;
+    color: var(--muted);
+    height: 32px;
+    overflow: hidden
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 800;
+    color: #6544d8;
+    margin: 12px 0
+}
+
+.stock {
+    font-size: 11px;
+    color: #7b7d88
+}
+
+.actions {
+    display: flex;
+    gap: 7px;
+    margin-top: 12px
+}
+
+.actions button {
+    flex: 1;
+    border: 1px solid #ded7ff;
+    border-radius: 7px;
+    padding: 9px 5px;
+    background: white;
+    color: #6443d3;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.actions button:first-child {
+    background: #6544d8;
+    color: #fff
+}
+
+.message {
+    font-size: 13px;
+    color: #b42318;
+    margin-bottom: 10px
+}
+
+.content {
+    max-width: 1180px;
+    margin: 20px auto 60px;
+    background: #fff;
+    border-radius: 14px;
+    padding: 25px;
+    min-height: 180px
+}
+
+.hidden {
+    display: none !important
+}
+
+.content h2 {
+    margin-top: 0
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.field input,
+.field textarea,
+.field select {
+    padding: 11px;
+    border: 1px solid #dddde7;
+    border-radius: 8px;
+    outline-color: #8568ec;
+    width: 100%
+}
+
+.field.full {
+    grid-column: 1/-1
+}
+
+.form-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap
+}
+
+.btn {
+    border: 0;
+    border-radius: 8px;
+    padding: 11px 16px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #6544d8;
+    color: #fff
+}
+
+.btn.secondary {
+    background: #eeeafc;
+    color: #5b3bc7
+}
+
+.btn.danger {
+    background: #fff0f0;
+    color: #b42318
+}
+
+.table-wrap {
+    overflow-x: auto
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left
+}
+
+th {
+    background: #f7f6fb
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 14px;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    padding: 15px 0
+}
+
+.cart-row input {
+    width: 65px;
+    padding: 8px;
+    border: 1px solid var(--line);
+    border-radius: 6px
+}
+
+.total {
+    font-size: 20px;
+    font-weight: 800;
+    text-align: right;
+    margin: 20px 0
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #14121dbb;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    z-index: 5
+}
+
+.modal-box {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 650px;
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
+    padding: 25px;
+    position: relative
+}
+
+.close {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    border: 0;
+    background: none;
+    font-size: 26px;
+    cursor: pointer
+}
+
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px
+}
+
+.detail-layout img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 15px 0
+}
+
+.stat {
+    padding: 18px;
+    background: #f6f3ff;
+    border-radius: 10px
+}
+
+.stat b {
+    font-size: 24px;
+    display: block;
+    color: #6544d8
+}
+
+.stat span {
+    font-size: 12px;
+    color: #555
+}
+
+footer {
+    padding: 30px max(calc((100% - 1180px)/2), 22px);
+    background: #1b1827;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 12px
+}
+
+footer span {
+    color: #b9b5c5
+}
+
+.auth-switch {
+    font-size: 13px;
+    margin-top: 16px;
+    color: #666
+}
+
+.auth-switch a {
+    color: #6544d8;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.pill {
+    display: inline-block;
+    border-radius: 20px;
+    background: #f0ecff;
+    padding: 5px 10px;
+    font-size: 11px;
+    color: #6544d8
+}
+
+@media(max-width:850px) {
+    .header {
+        gap: 14px
+    }
+
+    .header nav {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .hero {
+        margin: 16px;
+        padding: 25px;
+        grid-template-columns: 1fr
+    }
+
+    .hero-art {
+        display: none
+    }
+
+    .benefits {
+        margin: 0 16px 25px
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        margin: 0 16px
+    }
+
+    #productsSection {
+        margin: 0 0 40px
+    }
+
+    .section-head {
+        margin: 0 16px 15px;
+        align-items: start;
+        flex-direction: column
+    }
+
+    .content {
+        margin: 20px 16px;
+        padding: 18px
+    }
+
+    .filters {
+        width: 100%;
+        flex-wrap: wrap
+    }
+
+    .filters select {
+        flex: 1;
+        min-width: 130px
+    }
+
+    footer {
+        flex-direction: column
+    }
+
+    .detail-layout {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:480px) {
+    .product-grid {
+        gap: 10px
+    }
+
+    .product-card img {
+        height: 125px
+    }
+
+    .product-info {
+        padding: 10px
+    }
+
+    .product-info h3 {
+        font-size: 12px
+    }
+
+    .actions {
+        flex-direction: column
+    }
+
+    .benefits {
+        grid-template-columns: 1fr
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr
+    }
+
+    .field.full {
+        grid-column: auto
+    }
+
+    .hero h1 {
+        font-size: 34px
+    }
+}

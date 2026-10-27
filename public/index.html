@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DivineShop - Demo kiểm thử</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topbar">  </div>
+  <header class="header">
+    <a class="logo" href="#" onclick="showHome();return false">Divine<span>Shop</span></a>
+    <form class="search" id="searchForm"><input id="searchInput" placeholder="Tìm kiếm sản phẩm..."
+        aria-label="Tìm kiếm"><button>⌕</button></form>
+    <nav><a href="#" onclick="showHome();return false">Trang chủ</a><a href="#" onclick="showOrders();return false">Đơn
+        hàng</a><a href="#" onclick="showCart();return false">Giỏ hàng <b id="cartCount">0</b></a><a href="#"
+        id="authLink" onclick="showAuth('login');return false">Đăng nhập</a></nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">DIGITAL STORE • DEMO</p>
+        <h1>Thế giới số<br><span>trong tầm tay.</span></h1>
+        <p>Phần mềm, game và gói thành viên cho nhu cầu giải trí, học tập.</p><button class="primary"
+          onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Khám phá sản phẩm</button>
+      </div>
+      <div class="hero-art"><img
+          src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=900&q=80"
+          alt="Thiết bị chơi game"></div>
+    </section>
+    <section class="benefits">
+      <div>⚡ <b>Giao hàng nhanh</b><small>Minh họa quy trình giao mã</small></div>
+      <div>🔒 <b>Thanh toán an toàn</b><small>Demo COD / chuyển khoản</small></div>
+      <div>🎧 <b>Hỗ trợ khách hàng</b><small>Giao diện thực hành kiểm thử</small></div>
+    </section>
+    <section id="productsSection">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">CỬA HÀNG</p>
+          <h2>Sản phẩm nổi bật</h2>
+        </div>
+        <div class="filters"><select id="categoryFilter">
+            <option value="">Tất cả danh mục</option>
+          </select><select id="sortFilter">
+            <option value="">Mặc định</option>
+            <option value="price-asc">Giá tăng dần</option>
+            <option value="price-desc">Giá giảm dần</option>
+          </select></div>
+      </div>
+      <div id="message" class="message"></div>
+      <div id="products" class="product-grid">
+        <p>Đang tải sản phẩm...</p>
+      </div>
+    </section>
+    <section id="content" class="content hidden"></section>
+  </main>
+  <footer><b>DivineShop Demo</b><span>Website mẫu phục vụ bài tập kiểm thử phần mềm • Không phải website chính
+      thức.</span></footer>
+  <div id="modal" class="modal hidden">
+    <div class="modal-box"><button class="close" onclick="closeModal()">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
